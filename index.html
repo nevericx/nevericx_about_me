@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>구윤서(nevericx) — 자기소개</title>
+  <meta name="description" content="끊임없이 도전하는 게임 클라이언트 엔지니어, 구윤서입니다." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-text">
+        <h1>끊임없이 도전하는 게임 클라이언트 엔지니어, <span class="accent">구윤서</span>입니다.</h1>
+        <p class="lead">
+          "작은 시도들이 모여, 큰 변화를 만들어낼 수 있다"라는 생각을 가지고 꾸준히 도전하고 있습니다.
+        </p>
+        <ul class="about-list">
+          <li>포기하지 않고 스스로 해결하고자 노력합니다.</li>
+          <li>학습한 내용을 꾸준하게 기록합니다.</li>
+          <li>부족한 점을 깨닫고 채워나가는 과정을 즐기려고 합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>C#</p>
+          <p>C++</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Unity</p>
+          <p>Unreal Engine</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="project-list">
+          
+          <article class="project">
+            <h3>Fire, TANK!</h3>
+            <p class="project-desc">Unity 기반의 간단한 조작으로 즐기는 3D 캐주얼 슈팅게임입니다.</p>
+          </article>
+          
+          <article class="project">
+            <h3>Escape! Keys of Cave</h3>
+            <p class="project-desc">Unity 기반 2D 미로 퍼즐 게임으로, 열쇠를 찾아 탈출하는 점프 액션 게임입니다.</p>
+          </article>
+          
+          <article class="project">
+            <h3>오늘, 나에게</h3>
+            <p class="project-desc">Node.js 기반으로, AI가 생성해주는 매일 다른 질문을 통해 하루를 돌아보고 기록하는 힐링 Q&A 어플입니다.</p>
+          </article>
+      
+        </div>
+      </section>
+      
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li>[ GitHub ] <a href="https://github.com/nevericx" target="_blank" rel="noopener" aria-label="GitHub 프로필">github.com/nevericx</a></li>
+        <li>[ Blog ] <a href="https://velog.io/@nevericx" target="_blank" rel="noopener" aria-label="벨로그 블로그">velog.io/@nevericx</a></li>
+        <li>[ Email ] <a href="mailto:yunseo1120@naver.com">yunseo1120@naver.com</a></li>
+        <li>[ LinkedIn ] <a href="https://www.linkedin.com/in/nevericx/" target="_blank" rel="noopener" aria-label="LinkedIn 프로필">linkedin.com/in/nevericx</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> — nevericx</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
